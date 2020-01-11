@@ -5,7 +5,6 @@ services: docker
 env:
   global:
     - MAINFILE="exercise"
-    - OUTFILE="${MAINFILE}-unipd"
 
 script:
   - docker pull dxjoke/tectonic-docker
@@ -15,7 +14,7 @@ deploy:
   provider: releases
   api_key:
     secure: F/pdZeRtI4GcRF3KDZHZin6Whm42/2kKVXSpgw1FNIdGATNtZDGW43/vElbdham4g6EH/7U+27oAfjTzZWtMhMzIG1WDeI3HT0xu7J6tvMX3xc5DklXH5RCPhhnW1t8zY85VuhFfbeiao6ZYeItbTHYD8HBwmnzfXLXzUhOuTh/Da6KneG5d9nFlLXLCaY7nLVVakHO/mDhVVe0WujAI08l3tZUflqa4GyNiks+Ro/9Sun0eAflTb9P0erOJUOvWgTGzYGa+GnPuMaZI5fW40sAXwn3eMsghOrucVQ7GdkMAHDZhD8iE0VCiqIJA5+CgSTSzBwHA/w8JN5D+wd9yl5dr0P3vwKAHmnq2OJvecMvOcO899+YKwRp7rnM3MFxYh9YMwkFSUmvW4X2076Gid1l/VhhF5xV8qmax2Lxryu2+Nnya4PR7gpbjRk4ImZVS8MW5768l/yHCelJBqsB5t2uPO+DRlZGI7TapyROaYs+d/CgmQpaIgK5BhkeyRNUwfry49gefDOu1xpxsb4P16yKhI8A8r6A0hTHFyA5L79oJmGiZrqLxXWeyev+5gZYR0AXPqpiQRigv8P21xz481ZyzNehPX5bMA5IMPD2HMq/weArC1CgeFOMqOcBH+1ispBpDApY+pp0OmmMTxRqvq3z5eCexrfjmmQJXhmPIB0w=
-  file: "$TRAVIS_BUILD_DIR/${OUTFILE}-${TRAVIS_TAG}.pdf"
+  file: "$TRAVIS_BUILD_DIR/${MAINFILE}.pdf"
   skip_cleanup: true
   on:
     repo: lparolari/programming-exercise-template
