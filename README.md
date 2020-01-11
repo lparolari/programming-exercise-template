@@ -27,6 +27,10 @@ The directory is composed by a bunch of source files.
 - `macros.tex` where you can find some useful commands and macros (more information [here](https://github.com/lparolari/latex-macros)).
 - `prooftree.tex`, a handy packages for creating prooftrees (needed by `macros.txt`).
 
+## Example
+
+You can see how the template looks like in releases: see the last release [here](https://github.com/lparolari/programming-exercise-template/releases).
+
 ## Author
 
 Luca Parolari <<luca.parolari23@gmail.com>>
