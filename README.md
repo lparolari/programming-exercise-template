@@ -9,7 +9,7 @@
 ```
 git clone git@github.com:lparolari/programming-exercise-template.git exercise-name
 cd exercise-name
-rm -rf .git
+rm -rf .git .travis.yml LICENSE README.md
 ```
 
 ## Usage
